@@ -1,0 +1,23 @@
+{
+  "name": "@mycolorway/vest-form",
+  "description": "A miniprogram node package based on vest.",
+  "version": "0.0.1",
+  "main": "miniprogram_dist/index.js",
+  "files": [
+    "src",
+    "miniprogram_dist"
+  ],
+  "scripts": {
+    "dev": "vest dev",
+    "build": "vest build",
+    "test": "vest test"
+  },
+  "dependencies": {
+    "@mycolorway/vest-pocket": "^0.1.0",
+    "luxon": "^1.4.3",
+    "regenerator-runtime": "^0.12.1"
+  },
+  "devDependencies": {
+    "@mycolorway/vest": "^0.0.9"
+  }
+}

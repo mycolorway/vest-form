@@ -1,0 +1,24 @@
+<view class="weui-cell weui-cell_select">
+  <view class="weui-cell__hd weui-cell__hd_in-select-after">
+    <view class="weui-label {{ required ? 'required' : '' }} {{ error ? 'error' : '' }}">{{ label }}</view>
+  </view>
+  <view class="weui-cell__bd">
+    <block wx:if="{{ readonly }}">
+      <view class="readonly-input" wx:if="{{ displayValue }}">{{ displayValue }}</view>
+    </block>
+    <block wx:else>
+      <picker mode="multiSelector" range="{{ range }}" value="{{ index }}"
+        disabled="{{ disabled || readonly }}"
+        bindchange="onChange" bindcolumnchange="onColumnChange">
+        <view class="weui-select weui-select_in-select-after">
+          <view wx:if="{{ displayValue }}">{{ displayValue }}</view>
+          <view class="input-placeholder" wx:else>{{ placeholder }}</view>
+        </view>
+      </picker>
+    </block>
+  </view>
+</view>
+
+<view class="input-error" wx:if="{{ error && error.message }}">
+  {{ error.message }}
+</view>

@@ -1,0 +1,11 @@
+{
+  "name": "vest-form-demo",
+  "description": "A demo for development",
+  "private": true,
+  "dependencies": {
+    "regenerator-runtime": "^0.12.1"
+  },
+  "devDependencies": {
+    "weui-wxss": "^1.1.1"
+  }
+}

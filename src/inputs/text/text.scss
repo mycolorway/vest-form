@@ -1,0 +1,20 @@
+/*= import '../styles/base' */
+
+@import '@/styles/variables';
+
+.weui-cell {
+  display: block;
+}
+
+.weui-textarea {
+  height: 150rpx;
+}
+
+.text-readonly {
+  white-space: pre-line;
+  color: $lighter-grey-color;
+
+  &:first-line {
+    line-height: 0;
+  }
+}

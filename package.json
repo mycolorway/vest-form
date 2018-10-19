@@ -1,6 +1,6 @@
 {
   "name": "@mycolorway/vest-form",
-  "description": "A miniprogram node package based on vest.",
+  "description": "A miniprogram form component based on vest.",
   "version": "0.0.1",
   "main": "miniprogram_dist/index.js",
   "files": [

@@ -4,7 +4,7 @@
   </view>
   <view class="weui-cell__bd">
     <block wx:if="{{ readonly }}">
-      <view class="readonly-input" wx:if="{{ displayValue }}">{{ displayValue }}</view>
+      <view class="vest-form-input__readonly" wx:if="{{ displayValue }}">{{ displayValue }}</view>
     </block>
     <block wx:else>
       <picker mode="date" value="{{ monthValue }}" fields="month"
@@ -18,6 +18,6 @@
   </view>
 </view>
 
-<view class="input-error" wx:if="{{ error && error.message }}">
+<view class="vest-form-input__error" wx:if="{{ error && error.message }}">
   {{ error.message }}
 </view>

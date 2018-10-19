@@ -1,4 +1,4 @@
-<vest-form bind:submit="onSubmit">
+<vest-form bind:submit="onSubmit" id="demo-form">
   <view slot="inputs">
     <view class="weui-cells">
       <vest-form-string-input name="name" class="vest-form-input" label="姓名" placeholder="请输入姓名" value="哈哈哈" required></vest-form-string-input>
@@ -16,5 +16,6 @@
   </view>
   <view slot="buttons">
     <vest-form-button>提交</vest-form-button>
+    <button bind:tap="toggleErrors">显示/隐藏错误信息</button>
   </view>
 </vest-form>

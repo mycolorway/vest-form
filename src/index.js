@@ -104,11 +104,6 @@ Component({
       }, () => {
         if (firstErrorInput) this.scrollToInput(firstErrorInput)
       })
-
-      wx.showToast({
-        title: '表单验证未通过',
-        icon: 'none'
-      })
     },
 
     hideErrors() {

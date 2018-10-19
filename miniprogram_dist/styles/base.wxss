@@ -37,7 +37,7 @@
   font-size: 14px; }
 
 vest-form button, vest-form .button, vest-form vest-form-button {
-  margin: 0 0 20rpx 0; }
+  margin-bottom: 20rpx; }
   vest-form button:last-child, vest-form .button:last-child, vest-form vest-form-button:last-child {
     margin-bottom: 0; }
 

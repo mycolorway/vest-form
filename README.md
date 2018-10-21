@@ -38,11 +38,9 @@ vest build
 
 vest-form 只提供了一些基础类型的表单字段，我们可以在项目中根据业务需要编写新的表单字段组件，具体可以参考[这个例子](https://github.com/mycolorway/vest-form/blob/master/demo/src/components/another-string-input/another-string-input.js)。
 
-注意，表单字段组件的定义中必须使用 vest-form 提供的一个 behavior 和两个 relation，然后打开 addGlobalClass 选项：
+注意，表单字段组件的定义中必须使用 vest-form 提供的一个 behavior，然后打开 addGlobalClass 选项：
 
 ```js
-import formBehavior from '@mycolorway/vest-form/behavior'
-import fieldsetBehavior from '@mycolorway/vest-form/fieldset/behavior'
 import inputBehavior from '@mycolorway/vest-form/inputs/behaviors/input'
 
 Component({
@@ -50,17 +48,6 @@ Component({
 
   options: {
     addGlobalClass: true
-  },
-
-  relations: {
-    'formBehavior': {
-      type: 'parent',
-      target: formBehavior
-    },
-    'fieldsetBehavior': {
-      type: 'parent',
-      target: fieldsetBehavior
-    }
   },
 
   ...

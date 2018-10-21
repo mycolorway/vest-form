@@ -1,5 +1,3 @@
-import formBehavior from '@mycolorway/vest-form/behavior'
-import fieldsetBehavior from '@mycolorway/vest-form/fieldset/behavior'
 import inputBehavior from '@mycolorway/vest-form/inputs/behaviors/input'
 
 Component({
@@ -7,17 +5,6 @@ Component({
 
   options: {
     addGlobalClass: true
-  },
-
-  relations: {
-    'formBehavior': {
-      type: 'parent',
-      target: formBehavior
-    },
-    'fieldsetBehavior': {
-      type: 'parent',
-      target: fieldsetBehavior
-    }
   },
 
   properties: {},

@@ -1,7 +1,5 @@
 import InputBehavoir from '../behaviors/input'
 import dateInputBehavior from '../behaviors/date'
-import formBehavior from '@/behavior'
-import fieldsetBehavior from '@/fieldset/behavior'
 import { DateTime } from 'luxon'
 import { padString } from '@/modules/utils'
 
@@ -10,17 +8,6 @@ Component({
 
   options: {
     addGlobalClass: true
-  },
-
-  relations: {
-    'formBehavior': {
-      type: 'parent',
-      target: formBehavior
-    },
-    'fieldsetBehavior': {
-      type: 'parent',
-      target: fieldsetBehavior
-    }
   },
 
   properties: {

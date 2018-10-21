@@ -5,8 +5,24 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = void 0;
 
+var _behavior = _interopRequireDefault(require("../../behavior"));
+
+var _behavior2 = _interopRequireDefault(require("../../fieldset/behavior"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
 var _default = Behavior({
   behaviors: ['wx://form-field'],
+  relations: {
+    'formBehavior': {
+      type: 'parent',
+      target: _behavior.default
+    },
+    'fieldsetBehavior': {
+      type: 'parent',
+      target: _behavior2.default
+    }
+  },
   properties: {
     label: {
       type: String,

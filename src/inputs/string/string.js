@@ -1,5 +1,3 @@
-import formBehavior from '@/behavior'
-import fieldsetBehavior from '@/fieldset/behavior'
 import inputBehavior from '../behaviors/input'
 
 Component({
@@ -7,17 +5,6 @@ Component({
 
   options: {
     addGlobalClass: true
-  },
-
-  relations: {
-    'formBehavior': {
-      type: 'parent',
-      target: formBehavior
-    },
-    'fieldsetBehavior': {
-      type: 'parent',
-      target: fieldsetBehavior
-    }
   },
 
   properties: {},

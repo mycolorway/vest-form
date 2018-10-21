@@ -1,6 +1,20 @@
+import formBehavior from '@/behavior'
+import fieldsetBehavior from '@/fieldset/behavior'
+
 export default Behavior({
 
   behaviors: ['wx://form-field'],
+
+  relations: {
+    'formBehavior': {
+      type: 'parent',
+      target: formBehavior
+    },
+    'fieldsetBehavior': {
+      type: 'parent',
+      target: fieldsetBehavior
+    }
+  },
 
   properties: {
     label: {

@@ -4,10 +4,6 @@ var _input = _interopRequireDefault(require("../behaviors/input"));
 
 var _date = _interopRequireDefault(require("../behaviors/date"));
 
-var _behavior = _interopRequireDefault(require("../../behavior"));
-
-var _behavior2 = _interopRequireDefault(require("../../fieldset/behavior"));
-
 var _luxon = require("luxon");
 
 var _utils = require("../../modules/utils");
@@ -26,16 +22,6 @@ Component({
   behaviors: [_input.default, _date.default],
   options: {
     addGlobalClass: true
-  },
-  relations: {
-    'formBehavior': {
-      type: 'parent',
-      target: _behavior.default
-    },
-    'fieldsetBehavior': {
-      type: 'parent',
-      target: _behavior2.default
-    }
   },
   properties: {
     minuteStep: Number,

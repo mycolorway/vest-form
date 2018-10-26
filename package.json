@@ -13,11 +13,11 @@
     "test": "vest test"
   },
   "dependencies": {
-    "@mycolorway/vest-pocket": "^0.1.0",
+    "@mycolorway/vest-pocket": "^0.2.1",
     "luxon": "^1.4.3",
     "regenerator-runtime": "^0.12.1"
   },
   "devDependencies": {
-    "@mycolorway/vest": "^0.0.9"
+    "@mycolorway/vest": "^0.0.10"
   }
 }

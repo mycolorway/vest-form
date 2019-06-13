@@ -8,7 +8,7 @@
       <vest-form-boolean-input name="married" class="vest-form-input" label="已婚" value="{{ true }}"></vest-form-boolean-input>
       <vest-form-date-input name="birthday" class="vest-form-input" label="生日" value="2018-10-20" display-format="yyyy-MM-dd ccc"></vest-form-date-input>
       <vest-form-month-input name="birthdayMonth" class="vest-form-input" label="生日月份" value="2018-10"></vest-form-month-input>
-      <vest-form-time-input name="birthdayTime" class="vest-form-input" label="生日时间"></vest-form-time-input>
+      <vest-form-time-input name="birthdayTime" class="vest-form-input" label="生日时间" clearable="{{ false }}"></vest-form-time-input>
       <vest-form-number-input name="age" class="vest-form-input" label="年龄" suffix="岁"></vest-form-number-input>
       <vest-form-select-input name="favoriteColor" class="vest-form-input" label="喜欢的颜色" collection="{{ ['red', 'yellow', 'blue'] }}" value="red"></vest-form-select-input>
       <vest-form-text-input name="comment" class="vest-form-input" label="备注" placeholder="随便写"></vest-form-text-input>

@@ -13,5 +13,7 @@
 	"appid": "touristappid",
 	"projectname": "vest-form-demo",
 	"miniprogramRoot": "dist/",
+	"simulatorType": "wechat",
+	"simulatorPluginLibVersion": {},
 	"condition": {}
 }

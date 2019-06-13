@@ -40,6 +40,10 @@ export default Behavior({
     error: {
       type: null,
       value: false
+    },
+    clearable: {
+      type: Boolean,
+      value: true
     }
   },
 

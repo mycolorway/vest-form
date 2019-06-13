@@ -9,11 +9,14 @@
     <block wx:else>
       <picker mode="date" value="{{ value }}"
         disabled="{{ disabled || readonly }}" bindchange="onChange">
-        <view class="weui-select weui-select_in-select-after">
+        <view class="weui-select weui-select_in-select-after{{ clearable && !!value ? ' clearable' : '' }}">
           <view wx:if="{{ displayValue }}">{{ displayValue }}</view>
           <view class="input-placeholder" wx:else>{{ placeholder }}</view>
         </view>
       </picker>
+      <view class="clear-input" bind:tap="reset" wx:if="{{ clearable && !!value }}">
+        <image src="@/assets/icons/cross-grey.svg" class="clear-icon" />
+      </view>
     </block>
   </view>
 </view>

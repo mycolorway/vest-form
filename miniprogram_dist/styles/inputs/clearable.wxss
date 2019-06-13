@@ -8,8 +8,8 @@
   align-items: center;
   justify-content: center; }
   .clear-input .clear-icon {
-    width: 44rpx;
-    height: 44rpx; }
+    width: 38rpx;
+    height: 38rpx; }
 
 .weui-select.clearable {
   padding-right: 88rpx; }

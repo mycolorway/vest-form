@@ -1,5 +1,5 @@
 <view class="weui-cell">
-  <view class="weui-label weui-label_title {{ required ? 'required' : '' }} {{ error ? 'error' : '' }}">{{ label }}</view>
+  <view wx:if="{{ label }}" class="weui-label weui-label_title {{ required ? 'required' : '' }} {{ error ? 'error' : '' }}">{{ label }}</view>
 
   <view wx:if="{{ disabled || readonly }}" class="text-readonly">
     {{ value || '' }}

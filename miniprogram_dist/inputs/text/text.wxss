@@ -2,7 +2,9 @@
   display: block; }
 
 .weui-textarea {
-  height: 150rpx; }
+  height: 150rpx;
+  min-height: 48rpx;
+  line-height: 48rpx; }
 
 .text-readonly {
   white-space: pre-line;

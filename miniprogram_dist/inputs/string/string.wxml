@@ -4,7 +4,7 @@
   </view>
   <view class="weui-cell__bd">
     <input class="weui-input" value="{{ value }}" disabled="{{ disabled || readonly }}"
-      placeholder="{{ readonly ? '' : placeholder }}" bindinput="onInput" />
+      placeholder="{{ readonly ? '' : placeholder }}" focus="{{ focus }}" bindinput="onInput" />
   </view>
 </view>
 

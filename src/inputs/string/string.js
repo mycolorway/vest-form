@@ -7,7 +7,12 @@ Component({
     addGlobalClass: true
   },
 
-  properties: {},
+  properties: {
+    focus: {
+      type: Boolean,
+      value: false,
+    },
+  },
 
   data: {
     inputType: 'string'

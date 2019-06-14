@@ -5,7 +5,7 @@
     {{ value || '' }}
   </view>
   <textarea wx:else class="weui-textarea" value="{{ value }}" placeholder="{{ placeholder }}"
-    maxlength="-1" bindinput="onInput" />
+    maxlength="-1" bindinput="onInput" auto-height="{{ autoHeight }}" focus="{{ focus }}" />
 </view>
 
 <view class="vest-form-input__error" wx:if="{{ error && error.message }}">

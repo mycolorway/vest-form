@@ -9,7 +9,16 @@ Component({
   options: {
     addGlobalClass: true
   },
-  properties: {},
+  properties: {
+    autoHeight: {
+      type: Boolean,
+      value: false
+    },
+    focus: {
+      type: Boolean,
+      value: false
+    }
+  },
   data: {
     inputType: 'text'
   },

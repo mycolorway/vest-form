@@ -27,6 +27,12 @@ Component({
       this.setData({
         value: e.detail.value
       });
+      this.triggerEvent('change', {
+        name: this.data.name,
+        value: e.detail.value
+      }, {
+        bubbles: true
+      });
     }
   }
 });

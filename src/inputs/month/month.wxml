@@ -14,7 +14,7 @@
           <view class="input-placeholder" wx:else>{{ placeholder }}</view>
         </view>
       </picker>
-      <view class="clear-input" bind:tap="reset" wx:if="{{ clearable && !!value }}">
+      <view class="clear-input" bind:tap="onReset" wx:if="{{ clearable && !!value }}">
         <image src="@/assets/icons/cross-grey.svg" class="clear-icon" />
       </view>
     </block>

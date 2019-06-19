@@ -45,6 +45,15 @@ Component({
         });
       });
     },
+    onReset: function onReset() {
+      this.reset();
+      this.triggerEvent('change', {
+        name: this.data.name,
+        value: this.data.value
+      }, {
+        bubbles: true
+      });
+    },
     _updateDisplay: function _updateDisplay() {
       this.setData({
         range: this._convertCollectionToRange(),

@@ -58,6 +58,13 @@ Component({
       }, { bubbles: true })
     },
 
+    onReset() {
+      this.reset()
+      this.triggerEvent('change', {
+        name: this.data.name, value: this.data.value
+      }, { bubbles: true })
+    },
+
     onColumnChange(e) {
       if (!this.properties.showEmptyOption) return
 

@@ -30,6 +30,14 @@ Component({
         name: this.data.name,
         value: e.detail.value
       }, { bubbles: true });
-    }
+    },
+
+    onReset() {
+      this.reset()
+      this.triggerEvent('change', {
+        name: this.data.name,
+        value: this.data.value
+      }, { bubbles: true })
+    },
   }
 });
